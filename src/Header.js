@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './assets/logo.png'
+import logo from './assets/logo.png';
+import Nav from './Nav.js';
 
 function Header(){
     return(
         <header>
             <img src={logo} alt = "Little Lemon Logo"></img>
-            <h1>My website</h1>
+            <Nav/>
         </header>
     );
 }
