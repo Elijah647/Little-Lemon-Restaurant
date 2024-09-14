@@ -1,6 +1,6 @@
 import React from "react";
 
-function Review() {
+const Review = () => {
     return (
         <>
             <h2>Reviews</h2>

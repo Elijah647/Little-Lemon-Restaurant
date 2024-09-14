@@ -5,7 +5,7 @@ import About from "./about.js"
 import "./styles.css";
 
 
-function Main() {
+const Main = () => {
   return (
     <main>
       {/*Hero xection*/}

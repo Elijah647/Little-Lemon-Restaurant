@@ -1,7 +1,7 @@
 import React from "react";
 import mainImg from "./assets/bread.png";
 
-function About(){
+const About = () => {
 
     return (
         <>
