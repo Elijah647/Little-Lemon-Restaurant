@@ -1,6 +1,6 @@
 :root{
   --primaryfont: "Baskervville SC", serif;
-  --head: 48px;
+  --head: 3vw;
   --subhead: 30px;
   --desc: 20px;
   --text: 16px;
@@ -19,7 +19,7 @@ code {
 }
 
 header {
-  padding: 20px;
+  padding: 0;
   text-align: center;
   border: 2px solid red;
 }
@@ -28,9 +28,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 50px 10px 20px;
     background-color: #f4f4f4;
     justify-content: flex-end;
+
   }
 
 
@@ -53,19 +54,25 @@ header {
   h2{
     text-align: center;
     font-size: var(--head);
+    font-family: "Baskervville SC", serif;
+    margin-bottom: 3vw;
   }
 
   .head{
-    font-size: var(--head);
+    font-size: 4vw;
+    font-family:"Baskervville, SC", serif;
     padding: 0;
     margin: 0;
+  color: #F4CE14;
+
   }
-  
+
   .subhead{
-    font-size: var(--subhead);
-    border: 2px solid red;
-    padding: 0;
-    margin: 0;
+    font-size: 2vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0;
+  border: 2px solid red;
+  margin-top: 0;
   }
 
   .hero-section{
@@ -79,6 +86,8 @@ header {
     align-items: center; /* Center content vertically */
     margin: 0 15vw 0 15vw;
     border: 2px solid red;
+    width: auto;
+    gap: 5vw;
 
 }
 
@@ -91,13 +100,13 @@ header {
     border: 5px solid red; /* Border around text column */
     height: 500px;
     text-align: left;
-    width: 500px;
+    width: auto;
     font-size: var(--des);
 }
 
 .text-column > h1{
-  font-size: 4vw;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5vw;
+  font-family:"Baskervville, SC", serif;
   color: #F4CE14;
   padding: 0;
   margin: 0;
@@ -105,36 +114,42 @@ header {
 
 .text-column > h2{
   font-size: 2vw;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Baskervville, SC" serif;
   padding: 0;
-  margin: 1vw 0 2vw;
+  border: 2px solid red;
+  margin-top: 2px;
 }
 
 .image-column {
-    text-align: center; /* Center the image */
-    border: 2px solid blue;
+  display: flex;               /* Enable flexbox */
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  border: 2px solid blue;
+  height: 100%;                /* Full height of parent */
+  width: 100%;                 /* Full width of parent */
 }
 
 .main-image {
-  margin-top: 1vw;
-  width: 20vw;
-    height: 600px; /* Maintain aspect ratio */
-    border-radius: 1vw;
-    object-fit: cover;
-    margin-bottom: -50px;
+  margin-top: 1vw;            /* Space above image */
+  width: 25vw;                 /* Width relative to viewport */
+  max-width: 100%;            /* Ensure image doesn't exceed parent */
+  height: 600px;               /* Maintain aspect ratio */
+  border-radius: 1vw;         /* Rounded corners */
+  object-fit: cover;          /* Cover the area */
+  margin-bottom: -50px;       /* Adjust as needed */
 }
 
 .cta-button {
-    margin-top: 5vw; /* Space above button */
-    padding: 10px 10px; /* Button padding */
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    width: 50%;
-    align-self: center;
-    font-size: 30px;
+  margin-top: 5vw; /* Space above button */
+  padding: 15px 10px; /* Increased top and bottom padding */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 50%;
+  align-self: center;
+  font-size: 20px;
 }
 
 .cta-button:hover {
@@ -207,7 +222,7 @@ header {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
-  margin: 5vw 0 5vw 0;
+  margin-bottom: 5vw;
   height: 500px;
 }
 
@@ -221,7 +236,7 @@ header {
   "row4 row4";
   border: 2px solid red;
   gap: 20px;
-  padding: 20px;
+  padding: 3vw;
   background-color: #333;
 }
 
@@ -238,25 +253,56 @@ header {
   grid-area: row4;
 }
 
-.about-section{
-  display: flex;
-  flex-direction: row;
-  gap: 10vw;
-  margin: 5vw 0 5vw 0;
+.about-section {
+  display: grid;                     /* Use grid for layout */
+  grid-template-columns: 1fr 1fr;   /* Two equal columns */
+  gap: 10vw;                        /* Space between columns */
+  margin: 0 15vw 5vw 15vw;          /* Margin around section */
+  border: 2px solid red;
+  height: 600px;
 }
 
-.about-txt{
+.txt-col{
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.about-txt {
   line-height: 1.5;
   font-size: var(--desc);
-
 }
 
-.about-img{
-  border: 2px solid red;
-  width: 100%; /* Set the width to 100% of its container */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 1vw; /* Optional: if you want rounded corners */
+.image-container {
+  position: relative;                /* Position relative for absolute positioning of images */
+  width: 100%;                       /* Full width of the grid cell */
+  height: auto;                    /* Set height to match image height */
+  overflow: visible;                 /* Prevent overflow */
 }
+
+.image {
+  position: absolute;                /* Position images absolutely within container */
+  width: 300px;                      /* Set width to 300px */
+  height: 500px;                     /* Set height to 400px */
+  border-radius: 10px;               /* Optional: rounded corners */
+}
+
+.owner1 {
+  left: 0;                          /* Align first image to the left */
+  top: 50%;                         /* Adjust top position for diagonal overlap */
+  z-index: 2;                       /* Bring to front */
+}
+
+.owner2 {
+  left: 40%;                       /* Position second image slightly to the right */
+  top: 5%;                           /* Align with the top */
+  z-index: 1;                       /* Send to back */
+}
+
+.about-img {
+  width: 100%;                       /* Make images responsive */
+  height: 35vh;                      /* Maintain aspect ratio */
+}
+
 
 
 /* Footer.css */
