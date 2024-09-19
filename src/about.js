@@ -7,8 +7,8 @@ const About = () => {
       <h2>About Us</h2>
       <section className="about-section">
         <div className="txt-col">
-          <p className="head">Little Lemon</p>
-          <p className="subhead">Toronto</p>
+          <h1 className="head">Little Lemon</h1>
+          <h3 className="subhead">Toronto</h3>
           <p className="about-txt">
             Mediterranean cuisine is known for its fresh, vibrant flavors,
             featuring ingredients like olive oil, fresh herbs, vegetables, and

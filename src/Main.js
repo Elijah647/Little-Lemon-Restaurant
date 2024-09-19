@@ -3,8 +3,8 @@ import mainImg from "./assets/bread.png";
 import Review from "./Reviews";
 import About from "./about";
 import Menu from "./Menu";
-import "./styles.css";
 
+import "./styles.css";
 
 const Main = () => {
   return (
@@ -15,7 +15,7 @@ const Main = () => {
         <div className="grid-container">
           <div className="text-column">
             <h1>Little Lemon</h1>
-            <h2 className = "subhead">Toronto</h2>
+            <h2 className="subhead">Toronto</h2>
             <p>
               Mediterranean cuisine is known for its fresh, vibrant flavors,
               featuring ingredients like olive oil, fresh herbs, vegetables, and
@@ -33,24 +33,24 @@ const Main = () => {
       </section>
 
       {/*End of hero section*/}
-      <div className= "temp">
-      {/*Highlight section*/}
+      <div className="temp">
+        {/*Highlight section*/}
         <Menu />
         {/*End of highlight section*/}
 
         {/*Reviews section*/}
         <Review />
         {/*End of reviews section*/}
-        </div>
+      </div>
 
-        {/*About section*/}
-        <About/>
-        {/*End of about section*/}
+      {/*About section*/}
+      <About />
+      {/*End of about section*/}
 
-        {/*Footer*/}
-        {/*End of footer*/}
+      {/*Footer*/}
+      {/*End of footer*/}
     </main>
   );
-}
+};
 
 export default Main;

@@ -69,10 +69,11 @@ header {
 
   .subhead{
     font-size: 2vw;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Baskervville, SC", serif;
   padding: 0;
   border: 2px solid red;
   margin-top: 0;
+  text-align: left;
   }
 
   .hero-section{
@@ -112,13 +113,7 @@ header {
   margin: 0;
 }
 
-.text-column > h2{
-  font-size: 2vw;
-  font-family: "Baskervville, SC" serif;
-  padding: 0;
-  border: 2px solid red;
-  margin-top: 2px;
-}
+
 
 .image-column {
   display: flex;               /* Enable flexbox */
@@ -303,7 +298,12 @@ header {
   height: 35vh;                      /* Maintain aspect ratio */
 }
 
-
+.booking-section {
+  display: grid;
+  place-items: center;      /* Centers the content both horizontally and vertically */
+  height: 50vh;            /* Full viewport height */
+  border: 2px solid red;
+}
 
 /* Footer.css */
 .footer {
