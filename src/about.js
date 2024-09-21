@@ -1,5 +1,8 @@
 import React from "react";
 import mainImg from "./assets/bread.png";
+import M1 from "./assets/M&A1.jpg";
+import M2 from "./assets/M&A2.jpg";
+
 
 const About = () => {
   return (
@@ -20,10 +23,10 @@ const About = () => {
         </div>
         <div className="image-container">
           <div className="image owner1">
-            <img src={mainImg} alt="Owner 1" className="about-img" />
+            <img src={M1} alt="Owner 1" className="about-img" />
           </div>
           <div className="image owner2">
-            <img src={mainImg} alt="Owner 2" className="about-img" />
+            <img src={M2} alt="Owner 2" className="about-img" />
           </div>
         </div>{" "}
       </section>

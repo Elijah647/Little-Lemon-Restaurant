@@ -1,8 +1,12 @@
 import React from "react";
-import mainImg from "./assets/bread.png";
+import heroImg from "./assets/heroImg.jpg";
+import owners1 from "./assets/M&A1.jpg";
+import owners2 from "./assets/M&A2.jpg";
 import Review from "./Reviews";
 import About from "./about";
-import Menu from "./Menu";
+import AboutM from "./aboutM";
+import Specials from "./Specials.js";
+import { Link } from "react-router-dom";
 
 import "./styles.css";
 
@@ -24,10 +28,15 @@ const Main = () => {
               its emphasis on wholesome, simple ingredients, it's both delicious
               and healthy.
             </p>
-            <button className="cta-button">Reserve a table</button>
+            <button className="cta-button">
+              <Link to="/Booking" className="link-text">
+                Reserve a table
+              </Link>
+            </button>
           </div>
+
           <div className="image-column">
-            <img src={mainImg} alt="Description" className="main-image" />
+            <img src={heroImg} alt="Description" className="main-image" />
           </div>
         </div>
       </section>
@@ -35,7 +44,7 @@ const Main = () => {
       {/*End of hero section*/}
       <div className="temp">
         {/*Highlight section*/}
-        <Menu />
+        <Specials />
         {/*End of highlight section*/}
 
         {/*Reviews section*/}
@@ -44,7 +53,7 @@ const Main = () => {
       </div>
 
       {/*About section*/}
-      <About />
+      <AboutM />
       {/*End of about section*/}
 
       {/*Footer*/}

@@ -55,7 +55,7 @@ header {
     text-align: center;
     font-size: var(--head);
     font-family: "Baskervville SC", serif;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
   }
 
   .head{
@@ -79,6 +79,7 @@ header {
   .hero-section{
     background-color: #495E57;
     border: 2px solid red;
+    padding-top: 50px;
   }
 
   .grid-container {
@@ -90,6 +91,21 @@ header {
     width: auto;
     gap: 5vw;
 
+}
+
+.bor > img{
+  width: 15vw;
+  height: 200px;
+}
+
+.stars {
+  width: auto;
+  height: 3vh;
+}
+
+.rev-img{
+  width: 7vw;
+  height: 15vh;
 }
 
 .text-column {
@@ -113,8 +129,6 @@ header {
   margin: 0;
 }
 
-
-
 .image-column {
   display: flex;               /* Enable flexbox */
   justify-content: center;     /* Center horizontally */
@@ -137,35 +151,73 @@ header {
 .cta-button {
   margin-top: 5vw; /* Space above button */
   padding: 15px 10px; /* Increased top and bottom padding */
-  background-color: #007bff; /* Button background color */
+  background-color: black; /* Button background color */
   color: white; /* Button text color */
   border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  width: 50%;
+  width: 10vw;
   align-self: center;
   font-size: 20px;
 }
 
-.cta-button:hover {
-    background-color: #0056b3; /* Darken button on hover */
+.cta-button .link-text {
+  text-decoration: none; /* Remove underline */
 }
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+.om-btn {
+border-radius: 10px;
+}
+
+.om-btn:hover{
+    background-color: #333;
+  }
+
+  .a {
+    position: relative; /* Allows absolute positioning if needed */
+    width: 100%; /* Ensure the div takes the full width */
+    text-align: center; /* Center the button horizontally */
+  }
+  
+  .about-button {
+    padding: 15px 30px; /* Keep your existing button styles */
+    font-size: 20px; /* Keep your existing button styles */
+    border: none; /* Keep your existing button styles */
+    background-color: black; /* Keep your existing button styles */
+    color: white; /* Keep your existing button styles */
+    cursor: pointer; /* Keep your existing button styles */
+    margin: 0 auto; /* Center the button within the div */
+    display: inline-block; /* Make the button behave like an inline element */
+    border-radius: 10px;
+  }
+
+  .about-button:hover{
+    background-color: #333;
+  }
+  
+  .link-text {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the button text color */
+  }
 
 .temp{
   margin: 0 15vw 0 15vw;
 }
 
 .highlight-section{
-  padding: 20vh 5px 0px 5px;
-  background-color: #0056b3;
+  padding: 15vh 5px 0px 5px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat (3, 1fr);
   grid-template-rows: auto auto;
   grid-template-areas:
-  "col1 col1 col2"
+  "col1 col1 col1"
   "col3 col4 col5";
-  gap: 20px;
+  gap: 5vw;
   margin-bottom: 5vw;
 }
 
@@ -174,22 +226,90 @@ header {
   font-size: 3vw;
 }
 
-.col2 {
-  grid-area: col2;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
-  text-align: center;
-}
-
-.col2 button{
+.col1 button {
   padding: 20px;
   font-size: 20px;
+  border: none; /* Optional: remove border */
+  background-color: black; /* Optional: remove default background */
+  cursor: pointer; /* Change cursor to pointer */
+  color: white;
+  margin-top: 10vh;
+}
+
+.col1 button a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit button text color */
+}
+
+.menu-img {
+  border-radius: 10px;
+}
+
+.col3, .col4, .col5{
+  font-size: var(--text);
+  padding: 20px 30px 0px 30px;
+  color: white;
+  height: 50vh;
+  background: black;
+  border: 2px solid #323131;
+  overflow: hidden; /* Hide overflow from rounded corners */
+  box-shadow: 0 30px 30px rgba(101, 70, 24, 0.94); /* Subtle shadow for depth */
+  border-radius: 40px;
 }
 
 .col3 {
   grid-area: col3;
-  height: 50vh;
+}
+
+.menu-header{
+  font-family: "Baskervville SC", serif;
+  font-size: var(--head);
+  margin: 0;
+}
+
+.menu-section {
+  padding: 5vh 2vw;
+  background-color:#c9c6c6;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the flex items */
+  margin: 0 auto; /* Centers the whole section on the page */
+  max-width: 1200px; /* Limit the max width of the section */
+  margin-bottom: 5vw;
+  gap: 5vw;
+}
+
+.spec-img {
+  margin-top: 1vh;
+  width: 100%; /* Makes the image fill its container */
+  max-width: 300px; /* Limits the maximum width */
+  height: auto; /* Keeps the aspect ratio */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+}
+
+.menu-item {
+  flex: 0 0 calc(30% - 30px);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px; /* Add some padding inside the item */
+  background-color:  #62815e; /* White background for contrast */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(249, 204, 3, 0.1); /* Drop shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect to lift the item and intensify the shadow */
+.menu-item:hover {
+  transform: translateY(-10px); /* Lifts the item slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Adding a hover effect for the border */
+.menu-item:hover {
+  border: 3px solid #1bd0a5; /* Darker border on hover */
 }
 
 .highlight-section img{
@@ -198,54 +318,84 @@ header {
 }
 
 .col4 {
-  grid-area: col4;
+ grid-area: col4;
 }
 
 .col5 {
-  grid-area: col5;
+ grid-area: col5;
 }
 
 .bor{
   border: 2px solid green;
 }
 
-.review-section{
-  background-color: #495E57;
-  padding: 0px 20px 0px 20px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 5vw;
-  height: 500px;
-}
-
-.card{
+.review-section {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-  "row1 row1"
-  "row2 row3"
-  "row4 row4";
-  border: 2px solid red;
-  gap: 20px;
-  padding: 3vw;
-  background-color: #333;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns on large screens */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the section */
+  max-width: auto; /* Optional max width for the review section */
+  margin: auto; /* Center the section on the page */
 }
 
-.row1{
-  grid-area: row1;
+/* Card styling */
+.card {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Auto for image and name, flexible for the review */
+  border: 2px solid #eaeaea; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow from rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth scaling effect on hover */
 }
-.row2{
-  grid-area: row2;
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
 }
-.row3{
-  grid-area: row3;
+
+/* Text alignment */
+.row1, .row2 {
+  justify-self: center; /* Center the images horizontally */
 }
-.row4{
-  grid-area: row4;
+
+.row3, .row4 {
+  text-align: center; /* Center the text */
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+  .review-section {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .review-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .review-section {
+    grid-template-columns: 1fr; /* 1 column on extra small screens */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Add space below cards on small screens */
+  }
+}
+
+/* Additional row styling */
+.row3 {
+  padding: 10px; /* Optional padding */
+  font-weight: bold; /* Make the name stand out */
+  font-size: 1.25vw;
+}
+
+.row4 {
+  padding: 0 10px; /* Padding for the review text */
+  color: #555; /* Darker gray for the review text */
 }
 
 .about-section {
@@ -255,6 +405,8 @@ header {
   margin: 0 15vw 5vw 15vw;          /* Margin around section */
   border: 2px solid red;
   height: 600px;
+  box-shadow: 0 30px 30px rgba(101, 70, 24, 0.94); /* Subtle shadow for depth */
+  border-radius: 20px; /* Rounded corners */
 }
 
 .txt-col{
@@ -298,12 +450,16 @@ header {
   height: 35vh;                      /* Maintain aspect ratio */
 }
 
-.booking-section {
-  display: grid;
-  place-items: center;      /* Centers the content both horizontally and vertically */
-  height: 50vh;            /* Full viewport height */
-  border: 2px solid red;
+.container1 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  height: 10vh; /* Adjust height as needed */
 }
+
+
+
+
 
 /* Footer.css */
 .footer {
@@ -365,6 +521,80 @@ header {
   color: #ff6600; /* Change link color on hover */
 }
 
+/* Booking */
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 30px;
+  width: 10vw;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-section {
+  display: grid;
+  place-items: center;      /* Centers the content both horizontally and vertically */
+  height: 60vh;            /* Full viewport height */
+  border: 2px solid red;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(76, 175, 80);
+  color: white;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+/* ConfirmBooking.css */
+
+.confirm-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Center vertically */
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Dark text color */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.confirm-title {
+  font-size: 2.5rem; /* Large title */
+  margin-bottom: 20px; /* Space below title */
+  color: #4CAF50; /* Green color for title */
+}
+
+.confirm-message {
+  font-size: 1.2rem; /* Slightly larger message text */
+  margin: 0; /* Remove default margin */
+}
 
 /* Mobile Styles for iPhone 14 (390px width) */
 @media screen and (max-width: 390px) {
