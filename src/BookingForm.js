@@ -5,12 +5,14 @@ import * as Yup from "yup";
 const BookingForm = ({ availableTimes, updateAvailableTimes, submitForm }) => {
   const formik = useFormik({
     initialValues: {
+      name: "",
       date: "",
       time: "",
       guests: 1,
       occasion: "",
     },
     validationSchema: Yup.object({
+      name: Yup.string().required("Required"),
       date: Yup.date().required("Required").nullable(),
       time: Yup.string().required("Required"),
       guests: Yup.number()
@@ -26,6 +28,21 @@ const BookingForm = ({ availableTimes, updateAvailableTimes, submitForm }) => {
 
   return (
     <form className="booking-form" onSubmit={formik.handleSubmit}>
+      <label htmlFor="name">Name:</label>
+      <input
+        id="name"
+        type="name"
+        {...formik.getFieldProps("name")}
+        required // Add required attribute here
+        placeholder="Enter your name"
+        onChange={(e) => {
+          formik.setFieldValue("name", e.target.value);
+          updateAvailableTimes(e.target.value);
+        }}
+      />
+      {formik.touched.name && formik.errors.name ? (
+        <div className="error">{formik.errors.name}</div>
+      ) : null}
       <label htmlFor="date">Select Date:</label>
       <input
         id="date"

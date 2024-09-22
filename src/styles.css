@@ -2,7 +2,7 @@
   --primaryfont: "Baskervville SC", serif;
   --head: 3vw;
   --subhead: 30px;
-  --desc: 20px;
+  --desc: 1vw;
   --text: 16px;
 
   
@@ -21,7 +21,6 @@ code {
 header {
   padding: 0;
   text-align: center;
-  border: 2px solid red;
 }
 
   nav {
@@ -71,14 +70,17 @@ header {
     font-size: 2vw;
   font-family: "Baskervville, SC", serif;
   padding: 0;
-  border: 2px solid red;
   margin-top: 0;
   text-align: left;
   }
 
+  .hero-txt{
+    font-size: var(--desc);
+    line-height: 1.5;
+  }
+
   .hero-section{
-    background-color: #495E57;
-    border: 2px solid red;
+    background-color: #62877a;
     padding-top: 50px;
   }
 
@@ -87,7 +89,6 @@ header {
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     align-items: center; /* Center content vertically */
     margin: 0 15vw 0 15vw;
-    border: 2px solid red;
     width: auto;
     gap: 5vw;
 
@@ -114,7 +115,6 @@ header {
   justify-content: center;
   align-items: flex-start;
     padding: 20px; /* Space inside text column */
-    border: 5px solid red; /* Border around text column */
     height: 500px;
     text-align: left;
     width: auto;
@@ -133,7 +133,6 @@ header {
   display: flex;               /* Enable flexbox */
   justify-content: center;     /* Center horizontally */
   align-items: center;         /* Center vertically */
-  border: 2px solid blue;
   height: 100%;                /* Full height of parent */
   width: 100%;                 /* Full width of parent */
 }
@@ -181,22 +180,27 @@ border-radius: 10px;
     position: relative; /* Allows absolute positioning if needed */
     width: 100%; /* Ensure the div takes the full width */
     text-align: center; /* Center the button horizontally */
+    margin-top: 7vh;
   }
   
+
   .about-button {
     padding: 15px 30px; /* Keep your existing button styles */
     font-size: 20px; /* Keep your existing button styles */
-    border: none; /* Keep your existing button styles */
-    background-color: black; /* Keep your existing button styles */
+    background-color: black;
     color: white; /* Keep your existing button styles */
     cursor: pointer; /* Keep your existing button styles */
-    margin: 0 auto; /* Center the button within the div */
+    margin: auto; /* Center the button within the div */
     display: inline-block; /* Make the button behave like an inline element */
     border-radius: 10px;
+    border: 3px solid white;
+
+  
   }
 
   .about-button:hover{
-    background-color: #333;
+    background-color: rgb(201, 200, 200);
+    color: black;
   }
   
   .link-text {
@@ -269,8 +273,8 @@ border-radius: 10px;
 
 .menu-section {
   padding: 5vh 2vw;
-  background-color:#c9c6c6;
-  border-radius: 10px;
+  background-color:#050f00;
+  border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centers the flex items */
@@ -294,11 +298,12 @@ border-radius: 10px;
   text-align: center;
   box-sizing: border-box;
   padding: 20px; /* Add some padding inside the item */
-  background-color:  #62815e; /* White background for contrast */
   border: 1px solid #ddd; /* Light border */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(249, 204, 3, 0.1); /* Drop shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  color: white;
+  background-color:  #051e00; /* White background for contrast */
 }
 
 /* Hover effect to lift the item and intensify the shadow */
@@ -323,10 +328,6 @@ border-radius: 10px;
 
 .col5 {
  grid-area: col5;
-}
-
-.bor{
-  border: 2px solid green;
 }
 
 .review-section {
@@ -389,6 +390,7 @@ border-radius: 10px;
 /* Additional row styling */
 .row3 {
   padding: 10px; /* Optional padding */
+  margin: 0;
   font-weight: bold; /* Make the name stand out */
   font-size: 1.25vw;
 }
@@ -403,26 +405,29 @@ border-radius: 10px;
   grid-template-columns: 1fr 1fr;   /* Two equal columns */
   gap: 10vw;                        /* Space between columns */
   margin: 0 15vw 5vw 15vw;          /* Margin around section */
-  border: 2px solid red;
   height: 600px;
   box-shadow: 0 30px 30px rgba(101, 70, 24, 0.94); /* Subtle shadow for depth */
   border-radius: 20px; /* Rounded corners */
+  height: 70vh;
+  background-color: black;
+  color: white;
 }
 
 .txt-col{
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .about-txt {
   line-height: 1.5;
   font-size: var(--desc);
+
 }
 
 .image-container {
   position: relative;                /* Position relative for absolute positioning of images */
   width: 100%;                       /* Full width of the grid cell */
-  height: auto;                    /* Set height to match image height */
+  height: 95%;                    /* Set height to match image height */
   overflow: visible;                 /* Prevent overflow */
 }
 
@@ -448,6 +453,7 @@ border-radius: 10px;
 .about-img {
   width: 100%;                       /* Make images responsive */
   height: 35vh;                      /* Maintain aspect ratio */
+  border-radius: 30px;
 }
 
 .container1 {
@@ -456,9 +462,6 @@ border-radius: 10px;
   align-items: center; /* Center vertically (if needed) */
   height: 10vh; /* Adjust height as needed */
 }
-
-
-
 
 
 /* Footer.css */
@@ -527,18 +530,18 @@ border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 30px;
-  width: 10vw;
-  background-color: #f9f9f9;
+  padding: 40px;
+  width: 12.5vw;
+  background-color: #eaeaea;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .booking-section {
+  margin: 10px;
   display: grid;
   place-items: center;      /* Centers the content both horizontally and vertically */
-  height: 60vh;            /* Full viewport height */
-  border: 2px solid red;
+  height: auto;            /* Full viewport height */
 }
 
 label {
@@ -572,29 +575,47 @@ select {
 /* ConfirmBooking.css */
 
 .confirm-booking {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Center vertically */
-  background-color: #f9f9f9; /* Light background */
-  color: #333; /* Dark text color */
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;                     /* Enable flexbox */
+  flex-direction: column;            /* Stack children vertically */
+  justify-content: center;           /* Center content vertically */
+  align-items: center;               /* Center content horizontally */
+  padding: 20px;                    /* Add padding for spacing */
+  border-radius: 8px;                /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 500px;                 /* Max width for better readability */
+  margin: 20px auto;                /* Center the component */
+  height: 80vh;                     /* Use full height of the viewport */
+  text-align: center;               /* Center text */
+  background-color: #082401;
+  color: white;
+  
 }
 
 .confirm-title {
-  font-size: 2.5rem; /* Large title */
-  margin-bottom: 20px; /* Space below title */
-  color: #4CAF50; /* Green color for title */
+  color: #b0f9b2;            /* Green color for title */
+  font-size: 2em;            /* Larger font size */
+  margin-bottom: 10px;       /* Space below title */
 }
 
 .confirm-message {
-  font-size: 1.2rem; /* Slightly larger message text */
-  margin: 0; /* Remove default margin */
+  font-size: 1.2em;          /* Slightly larger message font */
+  margin-bottom: 20px;       /* Space below message */
 }
+
+.booking-details {
+  list-style-type: none;     /* Remove default list styles */
+  padding: 0;                /* Remove default padding */
+}
+
+.booking-details li {
+  margin: 8px 0;             /* Space between items */
+  font-size: 1em;            /* Standard font size */
+}
+
+.booking-details strong {
+  color: rgb(255, 255, 255);               /* Darker color for labels */
+}
+
 
 /* Mobile Styles for iPhone 14 (390px width) */
 @media screen and (max-width: 390px) {

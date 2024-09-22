@@ -1,9 +1,6 @@
 import React from "react";
 import heroImg from "./assets/heroImg.jpg";
-import owners1 from "./assets/M&A1.jpg";
-import owners2 from "./assets/M&A2.jpg";
 import Review from "./Reviews";
-import About from "./about";
 import AboutM from "./aboutM";
 import Specials from "./Specials.js";
 import { Link } from "react-router-dom";
@@ -20,7 +17,7 @@ const Main = () => {
           <div className="text-column">
             <h1>Little Lemon</h1>
             <h2 className="subhead">Toronto</h2>
-            <p>
+            <p className = "hero-txt">
               Mediterranean cuisine is known for its fresh, vibrant flavors,
               featuring ingredients like olive oil, fresh herbs, vegetables, and
               seafood. It combines the culinary traditions of countries along

@@ -1,5 +1,4 @@
 import React from "react";
-import mainImg from "./assets/bread.png";
 import M1 from "./assets/M&A1.jpg";
 import M2 from "./assets/M&A2.jpg";
 
@@ -13,12 +12,20 @@ const About = () => {
           <h1 className="head">Little Lemon</h1>
           <h3 className="subhead">Toronto</h3>
           <p className="about-txt">
-            Mediterranean cuisine is known for its fresh, vibrant flavors,
-            featuring ingredients like olive oil, fresh herbs, vegetables, and
-            seafood. It combines the culinary traditions of countries along the
-            Mediterranean Sea, including Greece, Italy, and Turkey. With its
-            emphasis on wholesome, simple ingredients, it's both delicious and
-            healthy.
+          Welcome to Little Lemon, where friendship and a passion
+            for food come together! Meet Alex and Sam, two lifelong friends who
+            grew up in a vibrant neighborhood filled with the aromas of
+            Mediterranean cuisine. From their childhood adventures in the
+            kitchen, experimenting with spices and flavors, to countless family
+            gatherings centered around delicious meals, their love for food has
+            only deepened over the years. Driven by their shared dream, they
+            decided to open a Mediterranean restaurant that celebrates the rich,
+            diverse flavors of the region. At Mediterranean Delights, every dish
+            tells a story—whether it’s a savory shawarma, a freh tabbouleh, or
+            a rich baklava, each recipe reflects the heritage and traditions
+            they cherish. Join us for a meal that’s not just about food, but
+            about friendship, culture, and community. We can’t wait to share our
+            passion with you!
           </p>
         </div>
         <div className="image-container">

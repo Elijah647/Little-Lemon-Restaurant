@@ -1,5 +1,6 @@
 import React from "react";
-import mainImg from "./assets/bread.png";
+import m1 from "./assets/M1.jpg";
+import m2 from "./assets/M2.jpg";
 import { Link } from "react-router-dom";
 
 const aboutM = () => {
@@ -11,12 +12,13 @@ const aboutM = () => {
           <h1 className="head">Little Lemon</h1>
           <h3 className="subhead">Toronto</h3>
           <p className="about-txt">
-            Mediterranean cuisine is known for its fresh, vibrant flavors,
-            featuring ingredients like olive oil, fresh herbs, vegetables, and
-            seafood. It combines the culinary traditions of countries along the
-            Mediterranean Sea, including Greece, Italy, and Turkey. With its
-            emphasis on wholesome, simple ingredients, it's both delicious and
-            healthy.
+            Driven by their shared dream, they decided to open a Mediterranean
+            restaurant that celebrates the rich, diverse flavors of the region.
+            At Mediterranean Delights, every dish tells a story—whether it’s a
+            savory shawarma, a fresh tabbouleh, or a rich baklava, each recipe
+            reflects the heritage and traditions they cherish. Join us for a
+            meal that’s not just about food, but about friendship, culture, and
+            community. We can’t wait to share our passion with you!
           </p>
           <div className="a">
             <button className="about-button">
@@ -24,16 +26,16 @@ const aboutM = () => {
                 Read More
               </Link>
             </button>
-            </div>
+          </div>
         </div>
         <div className="image-container">
           <div className="image owner1">
-            <img src={mainImg} alt="Owner 1" className="about-img" />
+            <img src={m1} alt="Owner 1" className="about-img" />
           </div>
           <div className="image owner2">
-            <img src={mainImg} alt="Owner 2" className="about-img" />
+            <img src={m2} alt="Owner 2" className="about-img" />
           </div>
-        </div>{" "}
+        </div>
       </section>
     </>
   );

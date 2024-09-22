@@ -1,6 +1,5 @@
 import React from "react";
 import stars from "./assets/stars.jpg";
-import M1 from "./assets/M&A1.jpg";
 import Maria from "./assets/maria.jpg";
 import Wayne from "./assets/wayne.jpg";
 import Stacy from "./assets/Stacy.jpg";

@@ -48,6 +48,7 @@ const Booking = () => {
   const submitForm = async (formData) => {
     const success = await submitApi(formData);
     if (success) {
+      localStorage.setItem("bookingData", JSON.stringify(formData)); // Store data in localStorage
       navigate("/ConfirmedBooking");
     }
   };
